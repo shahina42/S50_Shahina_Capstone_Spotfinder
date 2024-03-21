@@ -1,13 +1,14 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react'
+import{Route,Routes} from 'react-router-dom'
+
+
+import Landingpg from "./Components/Landingpg"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-<h1>Setting up things </h1>
-    </>
+    <Routes>
+           <Route path='/' element={<Landingpg/>}/>
+    </Routes>
   )
 }
 
