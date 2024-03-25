@@ -17,7 +17,9 @@ function About() {
                             <Link to='/'>
                                 <li className='text-white cursor-pointer  font-josefin'>Home</li>
                                 </Link>
+                                <Link to='/Review'>
                                 <li className='text-[#FFBC0E] cursor-pointer  font-josefin'>Review</li>
+                                </Link>
                                 <li className='text-[#FFBC0E] cursor-pointer  font-josefin'>Contact</li>
 
                         </ul>
