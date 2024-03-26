@@ -9,15 +9,15 @@ import ReviewData from './ReviewData';
 
 function Review() {
     // console.log(ReviewData);
-const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-  
-  };
-    
+    const settings = {
+      dots: true,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1900,
+      pauseOnHover: true
+    };
     return (
         <>
        
@@ -55,7 +55,7 @@ const settings = {
                     <div className='h-32 w-32 bg-white border-4 ml-32 border-[#FFBC0E] rounded-full'>
                         <img className='h-32 w-32 rounded-full' src={data.image} alt="ReviewData Image" />
                     </div>
-                    <div className='h-80 w-80  pl-4 pt-5 font-josefin ml-7 mr-14 text-2xl font-light bg-white rounded-2xl border-2 border-[#FFBC0E]'>
+                    <div className='h-80 w-[18rem] pl-4 pt-5 font-josefin ml-4 mr-14 text-2xl font-light bg-white rounded-2xl border-2 border-[#FFBC0E]'>
                     ❝ {data.content} ❞
                     </div>
                 </div>

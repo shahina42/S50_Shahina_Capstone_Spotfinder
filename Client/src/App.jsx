@@ -3,7 +3,8 @@ import{Route,Routes} from 'react-router-dom'
 import About from './Components/About'
 import Landingpg from "./Components/Landingpg"
 import Review from './Components/Review'
-import Slider from './Components/Slider'
+
+
 
 function App() {
   return (
