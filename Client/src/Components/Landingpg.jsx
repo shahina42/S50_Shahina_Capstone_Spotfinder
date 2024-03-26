@@ -1,23 +1,37 @@
 import React from 'react';
 import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import images from './SpotImages'
 
 function Landingpg() {
+    console.log(images)
+
+  
+    const settings = {
+        dots: false,
+        arrows:false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true
+      };
+
     return (
         <>
-
-            <div className='flex justify-center content-center '>
-
-
-
-
+            <div className='flex justify-center content-center  '>
                 <div className=' bg-[#FFBC0E] h-lvh text-white w-1/2'>
-
                     <nav>
                         <ul className='flex  pt-2 justify-around  items-center text-xl text-white'>
                             <div className='logo flex   items-center'>
                                 <img className=' w-9 ' src={logo} alt="" />
-                                <h1 className=' text-3xl pl-2  font-josefin'>Spotfinder</h1>
+                                <Link to='/Caraousel'>
+                                    <h1 className=' text-3xl pl-2  font-josefin'>Spotfinder</h1>
+                                </Link>
                             </div>
 
                             <Link to='/About'>
@@ -41,23 +55,30 @@ function Landingpg() {
 
 
 
-                <div className='h- w-1/2'>
+                <div className=' w-1/2  '>
+               
+                <Slider {...settings}>
+                            {images.map((data)=>(
+                                 <div  className="h-screen ">
+                     <img className="w-full h-full " src={data.image} alt="" />
+                       
+                          </div>
+                     ))}
+                     </Slider>
 
+                                {/* <nav>
+                                    <ul className='flex justify-around pt-4 items-center text-xl text-white'>
 
-                    <div className=" h-full" style={{ backgroundImage: "url('https://pix8.agoda.net/hotelImages/162/1621491/1621491_16110916030048573424.jpg?ca=6&ce=1&s=1024x768')" }}>
+                                        <li className='cursor-pointer  font-josefin'>Review</li>
+                                        <li className='cursor-pointer  font-josefin'>Contact</li>
 
-                        <nav>
-                            <ul className='flex justify-around pt-4 items-center text-xl text-white'>
-
-                                <li className='cursor-pointer  font-josefin'>Review</li>
-                                <li className='cursor-pointer  font-josefin'>Contact</li>
-
-                            </ul>
-                        </nav>
-                    </div>
+                                    </ul>
+                                </nav> */}
+                     
                 </div>
+               
             </div>
-
+         
 
 
         </>
