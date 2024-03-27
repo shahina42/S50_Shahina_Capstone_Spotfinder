@@ -13,50 +13,50 @@ const ReviewData = [
     },
     {
         "id": 3,
-        "image": "https://tse3.mm.bing.net/th?id=OIP.tjO9FMFMdM1cSVJV3cQv8QHaHa&pid=Api&P=0&h=220",
+        "image": "https://i.pinimg.com/564x/fc/9d/e8/fc9de80da08a4e4f57199ccc16228f2b.jpg",
         "content": "Exploring the city's hidden treasures has become a delightful adventure with this spotfinder website. From charming bookstores to vibrant street art, I'm constantly amazed by the gems it unveils."
 
     },
     {
         "id": 4,
-        "image": "https://tse3.mm.bing.net/th?id=OIP.FDArUkHg3KxxQfKqYZnVYgHaHa&pid=Api&P=0&h=220",
-        "content": "I've been using this spotfinder website for a while now, and it never disappoints. Whether I'm looking for a hidden gem to escape the city hustle or a scenic spot to enjoy nature, this website always has the perfect recommendation."
+        "image": "https://i.pinimg.com/564x/c4/7f/5d/c47f5d4458c9a2b161a19593344938a1.jpg",
+        "content": " using this  website for a while now, it never disappoints. Whether I'm looking for a hidden gem to escape the city hustle or a scenic spot to enjoy nature, this website always has the perfect recommendation."
 
     },
     {
         "id": 5,
         "image": "https://tse3.mm.bing.net/th?id=OIP.FDArUkHg3KxxQfKqYZnVYgHaHa&pid=Api&P=0&h=220",
-        "content": "This spotfinder website is a game-changer for travelers and locals alike. Its user-friendly interface and extensive database make it easy to discover unique spots in the city, from trendy cafes to picturesque beaches."
+        "content": "spotfinder is a game-changer for travelers and locals alike. Its user-friendly interface and extensive database make it easy to discover unique spots in the city, from trendy cafes to picturesque beaches."
 
     },
     {
         "id": 6,
         "image": "https://tse3.mm.bing.net/th?id=OIP.FDArUkHg3KxxQfKqYZnVYgHaHa&pid=Api&P=0&h=220",
-        "content": "Thanks to this spotfinder website, I've discovered so many hidden gems in my city that I never knew existed. Whether it's a cozy cafe to work in peace or a secluded nature reserve , this website has become my go-to resource."
+        "content": "Thanks to spotfinder, I've discovered so many hidden gems in my city that I never knew existed. Whether it's a cozy cafe to work in peace or a secluded nature reserve , this website has become my go-to resource."
 
     },
     {
         "id": 7,
         "image": "https://tse3.mm.bing.net/th?id=OIP.FDArUkHg3KxxQfKqYZnVYgHaHa&pid=Api&P=0&h=220",
-        "content": "I stumbled upon this spotfinder website while planning a weekend ,  it transformed my travel experience. With its curated list of spots, I was able to stunning beaches, and serene nature reserves, making my trip unforgettable."
+        "content": "I stumbled upon spotfinder while planning a weekend ,  it transformed my travel experience. With its curated list of spots, I was able to discover  stunning beaches making my trip unforgettable."
 
     },
     {
         "id": 8,
         "image": "https://tse3.mm.bing.net/th?id=OIP.FDArUkHg3KxxQfKqYZnVYgHaHa&pid=Api&P=0&h=220",
-        "content": "Finding hidden gems in the city has never been easier thanks to this spotfinder website. Whether I'm in the mood for a relaxing day at the beach or a quaint cafe to unwind, this website always has the perfect spot for every occasion."
+        "content": "Finding hidden gems in the city has never been easier thanks to  spotfinder. Whether I'm in the mood for a relaxing day at the beach or a quaint cafe to unwind, it always has the perfect spot ."
 
     },
     {
         "id": 9,
         "image": "https://tse3.mm.bing.net/th?id=OIP.FDArUkHg3KxxQfKqYZnVYgHaHa&pid=Api&P=0&h=220",
-        "content": "As a nature enthusiast, I rely on this spotfinder website to discover new hiking trails and nature reserves in the area. Thanks to its comprehensive database and user reviews, I always find the perfect spot for my outdoor adventures."
+        "content": "As a nature enthusiast, I rely on  spotfinder to discover new hiking trails and nature reserves in the area. Thanks to its comprehensive  user reviews, I always find the perfect spot for my adventures."
 
     },
     {
         "id": 10,
         "image": "https://tse3.mm.bing.net/th?id=OIP.FDArUkHg3KxxQfKqYZnVYgHaHa&pid=Api&P=0&h=220",
-        "content": "This spotfinder website has revolutionized the way I discover local attractions. Whether it's a historic landmark or a quirky art installation, I always find something intriguing to explore."
+        "content": " spotfinder has revolutionized the way I discover local attractions. Whether it's a historic landmark or a quirky art installation, I always find something intriguing to explore."
 
     },
 
@@ -75,19 +75,19 @@ const ReviewData = [
     {
         "id": 13,
         "image": "https://tse3.mm.bing.net/th?id=OIP.FDArUkHg3KxxQfKqYZnVYgHaHa&pid=Api&P=0&h=220",
-        "content": "This spotfinder website is a godsend for pet owners like me. It not only helps me find pet-friendly parks and cafes but also connects me with local pet services and events, making life with my furry friend even more enjoyable."
+        "content": "This website is a godsend for pet owners like me. Ithe lps me find pet-friendly parks and cafes, making life with my furry friend even more enjoyable."
 
     },
     {
         "id": 14,
         "image": "https://tse3.mm.bing.net/th?id=OIP.FDArUkHg3KxxQfKqYZnVYgHaHa&pid=Api&P=0&h=220",
-        "content": "Exploring the outdoors has never been easier, thanks to this spotfinder website. Whether it's camping spots, scenic viewpoints, or hidden waterfalls, it guides me to the most breathtaking natural wonders."
+        "content": "Exploring the outdoors has never been easier, thanks to  spotfinder. Whether it's camping spots,or hidden waterfalls, it guides me to the most breathtaking natural wonders."
 
     },
     {
         "id": 15,
         "image": "https://tse3.mm.bing.net/th?id=OIP.FDArUkHg3KxxQfKqYZnVYgHaHa&pid=Api&P=0&h=220",
-        "content": "This spotfinder website has become my go-to resource for spontaneous adventures. With its curated recommendations and intuitive map interface, I can easily discover new spots to explore whenever the mood strikes."
+        "content": "Spotfinder has become my go-to resource for spontaneous adventures. With its  intuitive map interface, I can easily discover new spots to explore whenever the mood strikes."
 
     },
     {
