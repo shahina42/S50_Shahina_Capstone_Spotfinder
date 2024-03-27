@@ -10,7 +10,8 @@ import ReviewData from './ReviewData';
 function Review() {
     // console.log(ReviewData);
     const settings = {
-      dots: true,
+      dots: false,
+      arrows:false,
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,

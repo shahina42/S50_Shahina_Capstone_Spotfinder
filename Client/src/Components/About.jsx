@@ -3,6 +3,7 @@ import logo from '../assets/logo.png';
 import bk from '../assets/bk.png'
 import { Link } from 'react-router-dom';
 import hotel from '../assets/hotel.jpg'
+
 function About() {
   return (
     <div className="bg-cover h-screen " style={{ backgroundImage: `url(${bk})` }}>

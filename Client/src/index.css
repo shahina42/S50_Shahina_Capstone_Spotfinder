@@ -7,3 +7,8 @@
     background-size: cover;
     background-position: 100% 100vh;
 }
+
+.custom-slider {
+    overflow-y: hidden !important;
+  }
+  
