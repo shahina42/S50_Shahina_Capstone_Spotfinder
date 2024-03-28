@@ -46,8 +46,8 @@ function Landingpg() {
 
 
                     <div className='description flex  pl-20 mt-28 '>
-                        <div className=' border-2 h-[25rem] border-white'></div>
-                        <div className=' '><h2 className='pl-5 mb-2 w-2/3 text-8xl font-bold  font-josefin'>Discover the best with us!</h2>
+                        <div className=' border-2 h-[21rem] border-white'></div>
+                        <div className=' '><h2 className='pl-5 mb-2 w-2/3 text-7xl font-bold  font-josefin'>Discover the best with us!</h2>
                             <h4 className='w-1/2 mb-5 pl-5 text-2xl  font-josefin font-light'>explore  secluded beaches to enchanting temples and cafes for an unforgettable experience.</h4>
                             <Link to='/Mainpg'><button className='ml-4 text-2xl border-2 border-white h-11 hover:bg-yellow-400 hover:text-white rounded-lg  w-32 bg-white text-yellow-400  font-josefin'>Sign Up</button> </Link>
                             <p className='pl-4 pt-2  font-josefin' >Already have an account? <u className=' hover:cursor-pointer  font-josefin'> Sign In</u></p>
