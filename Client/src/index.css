@@ -12,3 +12,6 @@
     overflow-y: hidden !important;
   }
   
+  .bigdiv::-webkit-scrollbar{
+    width: 0;
+  }
