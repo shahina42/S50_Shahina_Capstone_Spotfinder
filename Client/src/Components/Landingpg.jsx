@@ -29,7 +29,7 @@ function Landingpg() {
                         <ul className='flex  pt-4 justify-around  items-center text-xl text-white'>
                             <div className='logo flex   items-center'>
                                 <img className=' w-9 ' src={logo} alt="" />
-                                <Link to='/Caraousel'>
+                                <Link to='/Mainpg'>
                                     <h1 className=' text-3xl pl-2  font-josefin'>Spotfinder</h1>
                                 </Link>
                             </div>
@@ -40,7 +40,9 @@ function Landingpg() {
                             <Link to='/Review'>
                             <li className='cursor-pointer  font-josefin'>Review</li>
                             </Link>
+                            <Link to='/Contacts'>
                             <li className='cursor-pointer  font-josefin'>Contact</li>
+                            </Link>
                         </ul>
                     </nav>
 
@@ -49,8 +51,8 @@ function Landingpg() {
                         <div className=' border-2 h-[21rem] border-white'></div>
                         <div className=' '><h2 className='pl-5 mb-2 w-2/3 text-7xl font-bold  font-josefin'>Discover the best with us!</h2>
                             <h4 className='w-1/2 mb-5 pl-5 text-2xl  font-josefin font-light'>explore  secluded beaches to enchanting temples and cafes for an unforgettable experience.</h4>
-                            <Link to='/Mainpg'><button className='ml-4 text-2xl border-2 border-white h-11 hover:bg-yellow-400 hover:text-white rounded-lg  w-32 bg-white text-yellow-400  font-josefin'>Sign Up</button> </Link>
-                            <p className='pl-4 pt-2  font-josefin' >Already have an account? <u className=' hover:cursor-pointer  font-josefin'> Sign In</u></p>
+                            <Link to='/SignUp'><button className='ml-4 text-2xl border-2 border-white h-11 hover:bg-yellow-400 hover:text-white rounded-lg  w-32 bg-white text-yellow-400  font-josefin'>Sign Up</button> </Link>
+                            <Link to='/SignIn'><p className='pl-4 pt-2  font-josefin' >Already have an account?  <u className=' hover:cursor-pointer  font-josefin'> Sign In</u></p></Link>
                         </div>
                     </div>
 
