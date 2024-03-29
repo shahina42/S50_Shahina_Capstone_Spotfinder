@@ -22,6 +22,10 @@ function Landingpg() {
     };
 
     return (
+
+
+
+        
         <>
             <div className='flex justify-center content-center   '>
                 <div className=' bg-[#FFBC0E] h-lvh text-white w-2/3'>
@@ -38,10 +42,10 @@ function Landingpg() {
                                 <li className='cursor-pointer mr-42 font-josefin'>About</li>
                             </Link>
                             <Link to='/Review'>
-                            <li className='cursor-pointer  font-josefin'>Review</li>
+                                <li className='cursor-pointer  font-josefin'>Review</li>
                             </Link>
                             <Link to='/Contacts'>
-                            <li className='cursor-pointer  font-josefin'>Contact</li>
+                                <li className='cursor-pointer  font-josefin'>Contact</li>
                             </Link>
                         </ul>
                     </nav>
@@ -61,7 +65,7 @@ function Landingpg() {
 
 
                 <div className=' w-1/3 overflow-y-hidden '>
-          
+
                     <Slider {...settings} className="custom-slider">
                         {images.map((data) => (
                             <div className="h-screen ">
@@ -70,8 +74,8 @@ function Landingpg() {
                             </div>
                         ))}
                     </Slider>
-                    </div>
-            
+                </div>
+
 
             </div>
 
