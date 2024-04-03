@@ -18,7 +18,7 @@ app.get('/ping', (req, res) => {
 });
 
 app.use("/user", user_router); 
-// app.use("/posts", post_router);
+
 
 if (require.main === module) {
     app.listen(port, () => {
