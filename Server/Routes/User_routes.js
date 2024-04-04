@@ -27,31 +27,37 @@ function validateUser(req, res, next) {
     next();
 }
 
-// GET request
 router.get("/", async (req, res) => {
     try {
-        const data = await userModel.find();
-        res.json(data);
-    } catch (error) {
+        const UserName = req.userData.UserName;
+        const user = await userModel.findById(UserName);
+        if (!user) {
+            return res.status(404).json({ message: "User not found" });
+        }
+
+        res.json(user);
+    }catch (error) {
         console.log(error); 
         res.status(500).send("An error occurred");
     }
 });
 
-router.post("/", validateUser ,async (req, res) => {
+router.post("/signin", async (req, res) => {
     try {
-      const userData=req.body
-        const newUser = await userModel.create(userData);
-        const token=jwt(userData); 
-        if(!token){
-            return res.status(500).json({error:"Failed to sign JWT token"})
+        const { UserName, Password } = req.body;
+        const user = await userModel.findOne({ UserName, Password });
+        if (user) {
+            const token = jwt(user);
+            res.status(200).json({ user, token });
+        } else {
+            res.status(401).json({ message: "Invalid username or password" });
         }
-        res.status(201).json({userData:newUser,token:token})
     } catch (error) {
-        console.log(error); 
+        console.log(error);
         res.status(500).send("An error occurred");
     }
 });
+
 
 router.put("/:id", async (req, res) => {
     try {
