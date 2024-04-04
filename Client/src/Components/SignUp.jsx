@@ -54,11 +54,11 @@ function SignUp() {
 <h2 className=' text-4xl text-black ml-32  font-semibold'>Sign Up</h2><br />
 
 <input type="text" className='block w-80 border border-gray-300 rounded-md ml-6 py-2 px-3 ' placeholder='Name' {...register('UserName', { required: "Username is required", minLength: { value: 4, message: "Username must be more than 4 characters" }, maxLength: { value: 15, message: "Username must be less than 15 characters" } })}/><br />
-<p className='text-rose-900 ml-32'>{errors.UserName?.message}</p>
+<p className='text-black ml-32'>{errors.UserName?.message}</p>
 <input type="text" className='block w-80 border border-gray-300 rounded-md ml-6 py-2 px-3 mb-3' placeholder='Email'  {...register('Email', { required: "E-mail is required", pattern: { value: /^\S+@\S+$/i, message: "This is not a valid email" } })}/><br />
-<p className='text-rose-900'>{errors.Email?.message}</p>
+<p className='text-black ml-32 '>{errors.Email?.message}</p>
 <input type="text" className='block w-80 border border-gray-300 rounded-md ml-6 py-2 px-3 mb-3' placeholder='Password' {...register('Password', { required: "Password is required", minLength: { value: 4, message: "Password must be more than 4 characters" }, maxLength: { value: 10, message: "Password must be less than 10 characters" } })}/>
-<p className='text-rose-900'>{errors.Password?.message}</p><br />
+<p className='text-black ml-32'>{errors.Password?.message}</p><br />
 
 <button className=' bg-yellow-400 w-32 py-2 px-4 text-white rounded-md ml-32 hover:bg-black'>Submit</button>
 
