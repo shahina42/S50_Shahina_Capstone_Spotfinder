@@ -6,7 +6,22 @@ import user from '../assets/user.png';
 import website from '../assets/website.png';
 import com from '../assets/com.png';
 import heart from '../assets/heart.png';
+import {useNavigate} from 'react-router-dom';
+import Cookies from 'js-cookie';
 function Mainpg() {
+    const navigate = useNavigate();
+    const username = Cookies.get('username');
+    const LogOut = () => {
+        const confirmLogout = window.confirm("Are you sure you want to log out?");
+        if (confirmLogout) {
+          Cookies.remove('token');
+          Cookies.remove('username');
+          Cookies.remove('userData');
+          navigate('/');
+        }
+      }
+    
+
   return (
     <>
     <div className='flex justify-center content-center' >
@@ -51,7 +66,7 @@ function Mainpg() {
 
 <input  type="text" placeholder='Search '  className='border-[2px] border-yellow-400 rounded-lg pl-2 w-[30rem] h-10' />
  
- <div className=' w-[9rem] h-9 bg-yellow-400  rounded-lg  flex justify-center text-center  items-center '><img  className='h-7 w-10 pl-3' src={user} alt="" /><h5 className=' text-white '>User Name</h5></div>
+ <div className=' w-[9rem] h-9 bg-yellow-400  rounded-lg  flex justify-center text-center cursor-pointer items-center ' onClick={LogOut} ><img  className='h-7 w-10 pl-3' src={user} alt="" /><h5 className=' text-white '>{username}</h5></div>
 
  <div className='w-14 h-7 bg-yellow-400  rounded-full  '><div className='bg-white w-6 h-6 rounded-full ml-0.5 mt-0.5'></div></div>
 
@@ -62,7 +77,7 @@ function Mainpg() {
 
 <div className='flex text-center  items-center'> 
     <div className='bg-white w-[2rem] h-[2rem] ml-2 mt-2 rounded-full border-2'></div> 
-<h3 className='ml-3 '>User name</h3>
+<h3 className='ml-3 '>User Name</h3>
 </div>
 
 

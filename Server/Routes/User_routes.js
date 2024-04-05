@@ -59,6 +59,26 @@ router.post("/signin", async (req, res) => {
 });
 
 
+router.post('/signup', async (req, res) => {
+    try {
+      const { UserName, Email, Password } = req.body;
+
+      const existingUser = await userModel.findOne({ Email });
+      if (existingUser) {
+        return res.status(400).json({ message: "Email already exists" });
+      }
+
+      const newUser = new userModel({ UserName, Email, Password });
+      await newUser.save();
+  
+      res.status(201).json({ message: "User created successfully" });
+    } catch (error) {
+      console.error("Error creating user:", error);
+      res.status(500).json({ message: "An error occurred" });
+    }
+  });
+
+
 router.put("/:id", async (req, res) => {
     try {
         const userid = req.params.id;
