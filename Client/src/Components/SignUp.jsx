@@ -15,7 +15,7 @@ function SignUp() {
   const onSubmit = async (data) => {
     try {
       const { UserName, Email, Password } = data;
-        const response = await axios.post('http://localhost:3000/user', {UserName,Email,Password}, {
+        const response = await axios.post('http://localhost:3000/user/signup', {UserName,Email,Password}, {
             headers: {
                 'Content-Type': 'application/json'
             }
