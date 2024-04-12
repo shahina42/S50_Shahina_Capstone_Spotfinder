@@ -12,6 +12,7 @@ function Mainpg() {
     const navigate = useNavigate();
     const username = Cookies.get('username');
     
+    
     const LogOut = () => {
         const confirmLogout = window.confirm("Are you sure you want to log out?");
         if (confirmLogout) {
