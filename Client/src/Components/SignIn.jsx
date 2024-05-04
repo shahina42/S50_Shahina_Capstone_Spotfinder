@@ -10,7 +10,8 @@ function SignIn() {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const [loading, setLoading] = useState(false);
 
-    const onSubmit = async (formData) => {
+    const onSubmit = async (formData,e) => {
+        e.preventDefault();
         setLoading(true);
         try {
             const response = await axios.post('http://localhost:3000/user/signin', formData);
@@ -38,7 +39,7 @@ function SignIn() {
                     <h2 className='text-4xl text-black mt-4 ml-32 font-semibold'>Sign In</h2><br />
                     <input type="text" className='block w-80 border border-gray-300 rounded-md ml-6 py-2 px-3 mb-3' placeholder='Name' {...register('UserName', { required: "Username is required" })} /><br />
                     {errors.UserName && <p className='text-black'>{errors.UserName.message}</p>}
-                    <input type="text" className='block w-80 border border-gray-300 rounded-md ml-6 py-2 px-3 mb-3' placeholder='Password' {...register('Password', { required: "Password is required" })} /><br />
+                    <input type="password" className='block w-80 border border-gray-300 rounded-md ml-6 py-2 px-3 mb-3' placeholder='Password' {...register('Password', { required: "Password is required" })} /><br />
                     {errors.Password && <p className='text-black'>{errors.Password.message}</p>}
                     <button type="submit" className={`bg-yellow-400 w-32 py-2 px-4 text-white rounded-md ml-32 hover:bg-black ${loading ? 'cursor-not-allowed opacity-50' : ''}`} disabled={loading}>Submit</button>
                 </div>

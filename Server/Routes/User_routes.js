@@ -29,34 +29,36 @@ function validateUser(req, res, next) {
 
 router.get("/", async (req, res) => {
     try {
-        const UserName = req.userData.UserName;
-        const user = await userModel.findById(UserName);
-        if (!user) {
-            return res.status(404).json({ message: "User not found" });
-        }
-
-        res.json(user);
-    }catch (error) {
-        console.log(error); 
-        res.status(500).send("An error occurred");
-    }
-});
-
-router.post("/signin", async (req, res) => {
-    try {
-        const { UserName, Password } = req.body;
-        const user = await userModel.findOne({ UserName, Password });
-        if (user) {
-            const token = jwt(user);
-            res.status(200).json({ user, token });
-        } else {
-            res.status(401).json({ message: "Invalid username or password" });
-        }
+        const users = await userModel.find();
+        res.json(users);
     } catch (error) {
         console.log(error);
         res.status(500).send("An error occurred");
     }
 });
+
+
+router.post("/signin", async (req, res) => {
+    try {
+        const { UserName, Password } = req.body;
+        console.log(req.body)
+        const { error } = userValidation.validate({ UserName, Password });
+        if (error) {
+            return res.status(400).json({ error: error.details[0].message });
+        }
+        const user = await userModel.findOne({ UserName, Password });
+        if (user) {
+            const token = jwt(user);
+            return res.status(200).json({ user, token });
+        } else {
+            return res.status(401).json({ message: "Invalid username or password" });
+        }
+    } catch (error) {
+        console.log(error);
+        return res.status(500).send("An error occurred");
+    }
+});
+
 
 
 router.post('/signup', async (req, res) => {
