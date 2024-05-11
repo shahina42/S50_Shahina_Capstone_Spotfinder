@@ -7,7 +7,7 @@ import Mainpg from './Components/Mainpg'
 import SignUp from './Components/SignUp'
 import SignIn from './Components/SignIn'
 import Contacts from './Components/Contacts'
-
+import Top from './Components/Top'
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
            <Route path='/SignUp' element={<SignUp/>}/>
            <Route path='/SignIn' element={<SignIn/>}/>
            <Route path='/Contacts' element={<Contacts/>}/>
+           <Route path='/Top' element={<Top/>}/>
     </Routes>
   )
 }
