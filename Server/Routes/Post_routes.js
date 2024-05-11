@@ -11,7 +11,6 @@ const PostValidationSchema = Joi.object({
     Spot: Joi.string().required(),
     Location: Joi.string().required(),
     Description: Joi.string().required(),
-    Image: Joi.string().required(),
     Like: Joi.number().required(),
     Unlike: Joi.number().required(),
     Image: Joi.string().required()
@@ -21,7 +20,7 @@ const PostValidationSchema = Joi.object({
 function validatePostData(req, res, next) {
     const { error } = PostValidationSchema.validate(req.body)
     if (error) {
-        return res.status(400).json({ erro: error.details[0].message })
+        return res.status(400).json({ error: error.details[0].message })
     }
     next();}
 

@@ -72,7 +72,7 @@ function Mainpg() {
 
   return (
     <>
-      <div className='flex' >
+      <div className='flex ' >
 
         <Navbar />
 
@@ -85,10 +85,10 @@ function Mainpg() {
               <div className=' w-[9rem] h-9 bg-yellow-400  rounded-lg  flex justify-center text-center cursor-pointer items-center ' ><img className='h-7 w-10 pl-3' src={user} alt="" /><h5 className=' text-white '>{username}</h5></div>
               {/* onClick={LogOut} */}
             </Link>
-
-            <div className='w-14 h-7 bg-yellow-400  rounded-full mt-3  '><div className='bg-white w-6 h-6 rounded-full border ml-0.5 mt-0.5'></div></div>
+           
+            <div className='w-14 h-7 bg-yellow-400  rounded-full  '><div className='bg-white w-6 h-6 rounded-full border ml-0.5 mt-0.5'></div></div>
           </nav>
-          <div className=' h-[37rem] w-[53rem] overflow-auto ml-10  bigdiv '  >
+          <div className=' h-[33rem] w-[53rem] overflow-auto ml-10  bigdiv '  >
         
             {postdata.map((post, index) => (
               <div className='w-[40rem] h-[53rem] mb-10 border-2 border mt-8 border-yellow-300 shadow-lg rounded-lg' key={index}>
