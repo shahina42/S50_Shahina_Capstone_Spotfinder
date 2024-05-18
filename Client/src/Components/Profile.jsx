@@ -22,6 +22,18 @@ function Profile() {
         })
         .catch(error=>console.log("Error fetching post:",error))
     },[])
+
+    const handleDelete = (id) => {
+        axios.delete(`http://localhost:3000/post/posts/${id}`)
+            .then(response => {
+                console.log(response.data);
+               
+                setPost(Post.filter(post => post.id !== id));
+            })
+            .catch(error => {
+                console.error("Error deleting post:", error);
+            });
+    };
     return (
         <>
             <div className='flex'>
@@ -66,7 +78,7 @@ function Profile() {
           </Link>
     
 
-            <button> <img className='absolute bottom-0 left-10 w-8 h-8' src={bin} alt="" /></button>
+            <button onClick={handleDelete}> <img className='absolute bottom-0 left-10 w-8 h-8' src={bin} alt="" /></button>
          
         </div>           
                

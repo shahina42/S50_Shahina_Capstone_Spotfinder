@@ -79,6 +79,16 @@ router.post("/",async (req, res) => {
     
 });
 
+router.delete("/posts/:id", async (req, res) => {
+    try {
+        const postId = req.params.id;
+        const deletedpost = await postModel.findByIdAndDelete(postId);
+        res.json(deletedpost)
+    } catch (error) {
+        console.log(error);
+    }
+});
+
 
 module.exports = router;
 
